@@ -274,6 +274,7 @@ mod test {
             supported_platform_triples: BTreeSet::from([
                 "aarch64-apple-darwin".to_owned(),
                 "aarch64-unknown-linux-gnu".to_owned(),
+                "wasm32-unknown-emscripten".to_owned(),
                 "wasm32-unknown-unknown".to_owned(),
                 "wasm32-wasi".to_owned(),
                 "x86_64-apple-darwin".to_owned(),

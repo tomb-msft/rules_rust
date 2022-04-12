@@ -801,7 +801,7 @@ _rust_binary_attrs = {
             Crate type that will be passed to `rustc` to be used for building this crate.
 
             This option is a temporary workaround and should be used only when building
-            for WebAssembly targets (//rust/platform:wasi and //rust/platform:wasm).
+            for WebAssembly targets (//rust/platform:wasi, //rust/platform:wasm and //rust/platform:emscripten).
         """),
         default = "bin",
     ),

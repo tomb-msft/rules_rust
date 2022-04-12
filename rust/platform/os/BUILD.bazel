@@ -10,6 +10,12 @@ constraint_value(
     visibility = ["//visibility:public"],
 )
 
+constraint_value(
+    name = "emscripten",
+    constraint_setting = "@platforms//os",
+    visibility = ["//visibility:public"],
+)
+
 filegroup(
     name = "distro",
     srcs = [

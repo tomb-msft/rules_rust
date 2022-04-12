@@ -126,6 +126,7 @@ mod test {
             "i686-unknown-linux-gnu".to_owned(),
             "powerpc-unknown-linux-gnu".to_owned(),
             "s390x-unknown-linux-gnu".to_owned(),
+            "wasm32-unknown-emscripten".to_owned(),
             "wasm32-unknown-unknown".to_owned(),
             "wasm32-wasi".to_owned(),
             "x86_64-apple-darwin".to_owned(),

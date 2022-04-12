@@ -78,6 +78,14 @@ def declare_config_settings():
         ],
     )
 
+    native.platform(
+        name = "emscripten",
+        constraint_values = [
+            str(Label("//rust/platform/cpu:wasm32")),
+            str(Label("//rust/platform/os:emscripten")),
+        ]
+    )
+
     selects.config_setting_group(
         name = "unix",
         match_any = [

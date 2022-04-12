@@ -68,7 +68,7 @@ def rust_register_toolchains(
         register_toolchains = True,
         rustfmt_version = None,
         sha256s = None,
-        extra_target_triples = ["wasm32-unknown-unknown", "wasm32-wasi"],
+        extra_target_triples = ["wasm32-unknown-emscripten", "wasm32-unknown-unknown", "wasm32-wasi"],
         urls = DEFAULT_STATIC_RUST_URL_TEMPLATES,
         version = rust_common.default_version):
     """Emits a default set of toolchains for Linux, MacOS, and Freebsd
