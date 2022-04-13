@@ -769,7 +769,7 @@ def construct_arguments(
     if ("link" in emit and crate_info.type not in ["rlib", "lib"]) or force_link:
         # Rust's built-in linker can handle linking wasm files. We don't want to attempt to use the cc
         # linker since it won't understand.
-        if toolchain.target_arch != "wasm32":
+        if toolchain.target_arch != "wasm32" or toolchain.target_os == "emscripten":
             if output_dir:
                 use_pic = _should_use_pic(cc_toolchain, feature_configuration, crate_info.type)
                 rpaths = _compute_rpaths(toolchain, output_dir, dep_info, use_pic)
